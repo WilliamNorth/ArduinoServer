@@ -2,16 +2,16 @@
  * Arduino Custom Command Server (via the virtual serial port).
  * License: GPL
  * 
- * This is a sample Arduino Custom Command Server - Demo Application sketch called "MY_ServerApp.ino".
+ * This is the sample Arduino Custom Command Server Application sketch "MY_ServerApp.ino".
  * It should contain the 'displayAppSplash()', 'displayAppHelpScreen()' and
  * a method for each command.
  */
- 
+
 #define APP_NAME       "Arduino Custom Command Server - Demo Application"
-#define APP_VERSION    0.27
+#define APP_VERSION    0.28
 #define APP_DATE       "2012-10-16"
 #define APP_COPYRIGHT  "Copyright (C) 2012 William North"
- 
+
 void displayAppSplash()
 {
   Serial.print(APP_NAME);
@@ -51,4 +51,5 @@ int whatIsMOL(String strCommand)
   intCommandSucceeded = true;
   return intCommandSucceeded;
 }
+
 

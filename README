@@ -4,7 +4,7 @@ By default, commands are terminated by an LF (line-feed) and/or CR (carriage-ret
 
 I have only tested this project under Windows XP, with version 1.0.1 of the Arduino IDE, on an Arduino UNO R3.
 
-There are other ways of accomplishing this (Firmata, cmdMessenger...), but the goals for this project are simplicity and small size (under 6KB for the demo).
+There are other ways of accomplishing this (Firmata, cmdMessenger...), but the goals for this project are simplicity and small size (under 8KB for the demo).
 
 The sample project consists of four files:
 ArduinoServer.ino
@@ -16,7 +16,7 @@ ArduinoServer.ino:
 This is the generic server sketch that contains the getCommand() and runCommand() methods; the server splash and help screens; and a list of custom commands to parse.
 
 AurduinoServer_Example.ino:
-A sample Arduino sketch containing the setup() and loop() methods.
+A sample Arduino sketch containing the setup() and loop() methods.  Configure the Serial Monitor to send a 'Newline' when the [Enter] key is pressed or the 'Send' button is clicked, and set the rate to 115200 baud.
 
 MY_ServerApp.ino:
 An example server application containing custom commands (your custom methods called by the command-parser).

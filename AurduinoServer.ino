@@ -2,16 +2,16 @@
  * Arduino Custom Command Server (via the virtual serial port).
  * License: GPL
  * 
- * This is the Arduino Server sketch (called "ArduinoServer_Example.ino)".
+ * This is the Arduino Server sketch "ArduinoServer.ino".
  * Configure the Serial Monitor to send a 'Newline' when the [Enter] key is pressed 
  * or the 'Send' button is clicked, and set the rate to 115200 baud.
  */
- 
+
 #define SERVER_NAME       "Arduino Custom Command Server"
-#define SERVER_VERSION    0.27
+#define SERVER_VERSION    0.28
 #define SERVER_DATE       "2012-10-16"
 #define SERVER_COPYRIGHT  "Copyright (C) 2012 William North"
- 
+
 void displayServerSplash()
 {
   Serial.print(SERVER_NAME);
@@ -20,7 +20,8 @@ void displayServerSplash()
   Serial.print(" of ");
   Serial.print(SERVER_DATE);
   Serial.print(" ");
-  Serial.println(SERVER_COPYRIGHT); Serial.print("\n");
+  Serial.println(SERVER_COPYRIGHT); 
+  Serial.print("\n");
 }
 
 int displayServerHelpScreen() 
@@ -87,3 +88,4 @@ int runCommand(String strCommand)
   //Return the success or failure of this command.
   return intCommandSucceeded;
 }
+
