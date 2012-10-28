@@ -1,15 +1,18 @@
-/*
- MY_ServerApp.h version 0.29 - Arduino Custom Command Server (via the virtual serial port).
- For use with the Arduino (http://www.arduino.cc/).
- Created by William North, October 14, 2012.
- Released into the public domain.
- ArduinoServer.ino is a part of the ArduinoServer project at:
- https://github.com/WilliamNorth/ArduinoServer
- 
+/****************************************************************************
+ * MY_ServerApp.h
+ * Version 0.31 - Sample Arduino Custom Command Server application
+ * For use with the Arduino (http://www.arduino.cc/)
+ *
+ * Created by William North, October 14, 2012.
+ * License: GPL
+ *****************************************************************************
+ * ArduinoServer.h is a part of the ArduinoServer project at:
+ * https://github.com/WilliamNorth/ArduinoServer
+ *
  * This is a sample Arduino Custom Command Server application "MY_ServerApp.h".
  * It should contain the 'displayAppSplash()', 'displayAppHelpScreen()' and
  * a method for each command.
- */
+ ****************************************************************************/
 
 #ifndef MY_ServerApp.h
 #define MY_ServerApp.h
@@ -180,5 +183,6 @@ int dont()
 
 
 #endif
+
 
 

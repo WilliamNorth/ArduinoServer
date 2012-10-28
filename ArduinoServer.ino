@@ -1,15 +1,18 @@
-/*
- ArduinoServer.ino version 0.29 - Arduino Custom Command Server (via the virtual serial port).
- For use with the Arduino (http://www.arduino.cc/).
- Created by William North, October 14, 2012.
- Released into the public domain.
- ArduinoServer.ino is a part of the ArduinoServer project at:
- https://github.com/WilliamNorth/ArduinoServer
- 
+/****************************************************************************
+ * ArduinoServer.ino
+ * Version 0.31 - Arduino Custom Command Server demonstration sketch.
+ * For use with the Arduino (http://www.arduino.cc/)
+ *
+ * Created by William North, October 14, 2012.
+ * License: GPL
+ *****************************************************************************
+ * ArduinoServer.ino is a part of the ArduinoServer project at:
+ * https://github.com/WilliamNorth/ArduinoServer
+ *
  * This is a demo sketch called "AurduinoServer.ino".
  * Configure the Serial Monitor to send a 'Newline' when the [Enter] key is pressed 
  * or the 'Send' button is clicked, and set the rate to 115200 baud.
- */
+ ****************************************************************************/
 
 #ifndef ArduinoServer_ino
 #define ArduinoServer_ino
@@ -60,5 +63,6 @@ void loop ()
 
 
 
-#endif
+#endif  /* ArduinoServer_ino */
+
 

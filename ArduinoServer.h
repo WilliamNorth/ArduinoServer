@@ -1,15 +1,21 @@
-/*
- ArduinoServer.h version 0.29 - Arduino Custom Command Server (via the virtual serial port).
- For use with the Arduino (http://www.arduino.cc/).
- Created by William North, October 14, 2012.
- Released into the public domain.
- ArduinoServer.h is a part of the ArduinoServer project at:
- https://github.com/WilliamNorth/ArduinoServer
- 
+/****************************************************************************
+ * ArduinoServer.h
+ * Version 0.31 - Arduino Custom Command Server (via the virtual serial port).
+ * For use with the Arduino (http://www.arduino.cc/)
+ *
+ * Created by William North, October 14, 2012.
+ * License: GPL
+ *****************************************************************************
+ * ArduinoServer.h is a part of the ArduinoServer project at:
+ * https://github.com/WilliamNorth/ArduinoServer
+ *
  * This is the ArduinoServer module "ArduinoServer.h".
- * Configure the Serial Monitor to send a 'Newline' when the [Enter] key is pressed 
- * or the 'Send' button is clicked, and set the rate to 115200 baud.
- */
+ * Configure the Serial Monitor to send a 'Newline' when the [Enter] key is
+ * pressed or the 'Send' button is clicked, and set the rate to 115200 baud.
+ *
+ * This server is setup to run the ArduinoServer application "MY_ServerApp.h"
+ * which is the example application of the ArduinoServer project.
+ ****************************************************************************/
 
 #ifndef ArduinoServer_h
 #define ArduinoServer_h
@@ -146,7 +152,8 @@ int runCommand(String strCommand)
   return intCommandSucceeded;
 }
 
-#endif
+#endif  /* ArduinoServer_h */
+
 
 
 
